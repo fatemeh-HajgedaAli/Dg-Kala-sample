@@ -31,22 +31,34 @@
 }
 *{
 box-sizing: border-box;
-text-decoration: none;
-list-style-type: none;
 margin: 0;
 padding: 0;
+
+}
+body{
+text-decoration: none;
+list-style-type: none;
 font-size: 0.8rem;
+font-family:'vazir';
 }
 a , ul ,li  , ol{
 text-decoration: none;
+list-style-type: none;
+}
+.container {
+max-width: 100%;
+padding-right: 1rem;
+padding-left: 1rem;
+margin-right:-1rem;
+margin-left: -1rem;
 }
 /* start header's styles code */
 .navPart{
 display:inline-block;
+width:100%;
 background-color: #fff;
-margin: 0;
-position: fixed;
-z-index: 100;
+position:sticky;
+z-index: 10;
 }
 .topNav{
 display: flex;
@@ -82,57 +94,165 @@ background-color: #e0e0e2;
 display: flex;
 width: 10rem;
 height: 3.2rem;
-text-align: center;
 align-items: center;
-margin-right: 55rem;
+margin-right: 45rem;
 margin-top: 1.5rem;
-padding: 0.8rem;
+padding-right: 2rem;
 gap: 0.2rem;
 border: 1px solid #e0e0e2;
 border-radius: 1rem;
 }
 .bi-box-arrow-in-right{
-font-size: 2rem;
+font-size: 1.5rem;
 color: #333;
 padding-top: 0.4rem;
 }
 .logIn{
 font-family:'vazir';
-font-size: 1rem;
+font-size: 0.8rem;
 font-weight: bolder;
+text-align: center;
 color: #212121;
 }
+.fistLink{
+border-left: 1px solid #c6c7cf;
+padding-left: 1px;
+}
 .bi-cart{
-font-size: 2rem;
+font-size: 1.5rem;
 color: #333;
-}
-.cartIcon{
 border-right: 1px solid #e0e0e2;
-margin-right: 0.5rem;
+margin-right: -0.5rem;
 margin-top: 1.5rem;
-padding-right: 1rem;
+padding-right: 0.5rem;
 }
-/* nav bottom part from  */
+/* nav bottom desktop part from  */
 .bottomNav{
 display:flex;
 gap:1rem;
 margin-top: 2rem;
+margin-right:2.5rem ;
+padding-bottom: 5px;
 font-family:'vazir';
+border-bottom:1px solid #c0c2c5;
 }
 .navigation{
 display: flex;
-
 }
 .navMenu{
 display: flex;
 gap: 1rem;
+color: #a1a3a8;
 }
-.ul:nth-child(6){
-border-left: 1px solid #e0e0e2;
+.navLink{
+color: #62666d;
+padding-right: 3px;
 }
+.navMenu:first-child {
+border-right:1px solid #bfc1c5;
+padding-right: 5px;
+}
+.navMenu .sixthChild{
+border-right:1px solid #bfc1c5;
+padding-right: 5px;  
+}
+.location{
+margin-right: 10rem;
+color: #212121;  
+}
+/* nav bottom phone */
+.navMenuPhone{
+background-color: crimson;
+display: flex;
+flex-direction: column;
+margin-right: -56rem;
+padding-top: 1rem;
+padding-bottom: 2rem;
+width: 12rem;
+gap: 2rem;
+text-align: center;
+display: none;
+}
+.firstlinkPhone{
+font-weight: bolder;
+color: #8f4aec;
+border-bottom:2px solid #72f308;
+padding-bottom: 1rem;
+}
+.navLinkPhone{
+font-family:'vazir';
+font-size: 1rem;
+color: #fff;
+}
+/* start profile Part-قسمت پروفایل   */
+.profileMenu{
+display: flex;
+flex-wrap: nowrap;
+gap: 1rem;
+margin-top: 1rem;
+align-items: center;
+margin-right: 1rem;
+}
+.profileImage{
+width:5rem;
+border: 3px solid #6000d9;
+border-radius: 100%;
+padding: 2.5px;
+}
+.profilItems{
+text-align: center;
+font-size: 0.8rem;
+padding-right: 1rem;
 
-
-
+}
+/* header Picture */
+.headerPicture{
+  background-image:url("../pictures/main\ background.avif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25rem;
+    width: 84rem;
+}
+.headerTitel{
+    font-size: 2.5rem;
+    color: #fff;
+    padding-right: 5rem;
+    padding-top: 2rem;
+    text-shadow: 1px 2px 5px rgb(223, 102, 102);
+}
+.headerText{
+    font-size: 1rem;
+    background-color:rgba(248, 244, 244, 0.5);
+    width: 20rem;
+    color: #0c0c0c;
+    margin-right: 6rem;
+    margin-top: 0.1rem;
+    padding-right: 3rem;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius:0 0 1rem 1rem ;
+    text-shadow: 1px 2px 5px #302c2c;
+    box-shadow:1px 3px 7px #212121;
+}
+.headerBtn{
+    background-color: #fff;
+    font-family:'vazir';
+    font-size: 0.8rem;
+    font-weight: bolder;
+    color: #212121;
+    border: none;
+    margin-right: 13rem;
+    margin-top: 0.5rem;
+    width: 4rem;
+    height: 1.5rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    box-shadow:1px 3px 7px #212121;
+    
+}
+/* start */
+/*  */
 /* fonts */
 @font-face {
 font-family: 'vazir';
@@ -141,36 +261,27 @@ src : url('../fonts/vazir.ttf') format('truetype'),
 url('../fonts/vazir.woff') format('woff'),
 url('../fonts/vazir.woff2') format('woff2');
 }
-/* grid Part */
-.container {
-    width: 100%;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    margin-right:-1rem;
-    margin-left: -1rem;
+/* responsive Part */
+@media screen and (max-width:992px){
+
+.bottomNav , .logInPart , .bi-cart , .profileMenu{
+display: none;
 }
-@media (max-width: 576px) {
-    .container {
-        width: 36rem;
-    }
+.navMenuPhone{
+display:inline-block;
 }
-@media (max-width: 768px) {
-    .container {
-        width: 48rem;
-    }
+.topNav{
+margin-right: 5rem;
+border-bottom: 1px solid #c6c7cf;
+padding-bottom:1rem;
 }
-@media (max-width: 992px) {
-    .container {
-        width: 62rem;
-    }
+.dgkalaLogo{
+    width: 15rem;
+    margin-right: 11rem;
 }
-@media (max-width: 1200px) {
-    .container {
-        width: 75rem;
-    }
+.searchBox{
+    width: 20rem;
 }
-@media (max-width: 1326px) {
-    .container {
-        width:100%;
-    }
+.
 }
+

@@ -52,7 +52,10 @@ padding-left: 1rem;
 margin-right:-1rem;
 margin-left: -1rem;
 }
-/* start header's styles code */
+/* start header's styles code from 56 to 255 */
+/* navBar that consist of two part start from 57to 187 */
+/* desktop part from 58to161 */
+/* top navigation part  */
 .navPart{
 display:inline-block;
 width:100%;
@@ -126,7 +129,7 @@ margin-right: -0.5rem;
 margin-top: 1.5rem;
 padding-right: 0.5rem;
 }
-/* nav bottom desktop part from  */
+/* bottom navigation part */
 .bottomNav{
 display:flex;
 gap:1rem;
@@ -160,7 +163,7 @@ padding-right: 5px;
 margin-right: 10rem;
 color: #212121;  
 }
-/* nav bottom phone */
+/* nav bottom phone from 167 to 189 that's display is none in desktop size and it will shown in phone size */
 .navMenuPhone{
 background-color: crimson;
 display: flex;
@@ -184,7 +187,7 @@ font-family:'vazir';
 font-size: 1rem;
 color: #fff;
 }
-/* start profile Part-قسمت پروفایل   */
+/* start profile Part = from 191 to 210.  */
 .profileMenu{
 display: flex;
 flex-wrap: nowrap;
@@ -205,7 +208,7 @@ font-size: 0.8rem;
 padding-right: 1rem;
 
 }
-/* header Picture */
+/* header Picture =212 to 256  */
 .headerPicture{
   background-image:url("../pictures/main\ background.avif");
     background-position: center;
@@ -251,8 +254,33 @@ padding-right: 1rem;
     box-shadow:1px 3px 7px #212121;
     
 }
-/* start */
-/*  */
+/* start  main Part consist of some part that is  from 255 to */
+/* mainIcons consist of icons with their titels from 260 to  */
+.mainIconsMenu{
+position: relative;
+display: flex;
+gap: 1rem;
+align-items: center;
+justify-content: space-evenly;
+margin-right: 2.5rem;
+margin-top: 1rem;
+}
+.iconsLink{
+display: flex;
+font-family:'vazir';
+font-size: 0.8rem;
+color: #212121;
+text-align: center;
+font-weight: bolder;
+padding-top: 0.2rem;
+}
+.iconsMainPart{
+width: 4rem;
+border: 2px solid #6000d9;
+border-radius: 100%;
+padding:0.1rem;
+
+}
 /* fonts */
 @font-face {
 font-family: 'vazir';

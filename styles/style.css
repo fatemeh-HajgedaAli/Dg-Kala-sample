@@ -1,6 +1,7 @@
 /* start style's code */
 :root{
---font-family: 'vazir';
+--primary-font: 'vazir';
+--seondary-font:'isans';
 --spacing-base: 4px; 
 /* colors */
 --color-app-background: #f2f2f2;
@@ -33,7 +34,7 @@
 box-sizing: border-box;
 margin: 0;
 padding: 0;
-
+font-family:var(--primary-font)
 }
 body{
 text-decoration: none;
@@ -324,6 +325,7 @@ padding:0 1rem;
 .albumText{
 font-size: 0.7rem;
 padding-bottom: 1rem;
+font-family:'vazir';
 }
 .pricetext{
 display: flex;
@@ -348,26 +350,128 @@ color: #fff;
 }
 .albumIcon{
     position: absolute;
-    right: 74.5rem;
+    right: 75rem;
     margin-top: -9rem;
-    font-size: 4rem;
+    font-size: 3rem;
     color: #fff;
-    text-shadow: 2px 3px 7px #302c2c;
+    text-shadow: 2px 3px 4px #212121;
 }
+/* basketPart */
+.basketPart{
+display: flex;
+gap: 1rem;
+background-color: #c6c7cf;
+width: 82rem;
+margin-top: 3rem;
+margin-right: 1rem;
+margin-bottom: 2rem;
+padding-top: 1rem;
+border-radius: 2rem;
+}
+.basketImg{
+margin-right: 2rem;
 
+}
+.basketText{
+font-family: var(--primary-font);
+font-size: 1rem;
+font-weight: lighter;
+background-color: #029a49;
+color: #fff;
+padding:0.5rem;
+text-align: center;
+height: 2.2rem;
+width: 8rem;
+border-radius: 0.5rem;
+margin-top: 1.2rem;
+}
+.basketMenu{
+display: flex;
+gap: 1rem;
+margin-right: 2rem;
+}
+.basketImage{
+width: 4rem;
+border-radius: 5rem;
+}
+.basketLink{
+position: absolute;
+background-color: crimson;
+color: #fff;
+font-size: 0.8rem;
+padding: 0.2rem;
+border-radius: 1rem;
+margin-right: -5rem;
+margin-top: 2rem;
+}
+.basketBtnLeft{
+font-family: var(--primary-font);
+font-size: 1rem;
+font-weight: lighter;
+background-color: #fff;
+color: #029a49;
+padding:0.5rem;
+text-align: center;
+height: 2.2rem;
+width: 10rem;
+border-radius: 0.5rem;
+margin-top: 1.2rem; 
+}
+/* main Image Part */
+.topImagePart{
+display: flex;
+gap: 0.8rem;
+margin-right: 5rem;
 
-
-
-
-
-
+}
+.imagePartMain{
+width: 18rem;
+border-radius: 2rem;
+box-shadow: 2px 2px 7px #424650;
+}
+.BrandPart{
+display: flex;
+justify-content: space-evenly;
+margin-top: 0.5rem;
+}
+.brandTitle{
+text-align: center;
+font-size: 3rem;
+padding-top: 1rem;
+text-shadow: 1px 1px 3px #333;
+}
+.titleStar{
+color: gold;
+}
+.brandImg{
+width: 5rem;
+border-radius: 100%;
+border: 3px solid #8f4aec;
+padding: 0.5rem;
+}
+.bottomImagePart{
+display: flex;
+flex-direction: row;
+gap: 1rem;
+margin-right: 1rem;
+margin-top: 1rem;
+}
+.imageBottomPart{
+width: 40rem;
+border-radius: 2rem;
+box-shadow: 2px 2px 7px #424650;
+}
 /* fonts */
+
+@font-face {}
 @font-face {
-font-family: 'vazir';
-src: url('../fonts/vazir.eot') format('eot');
-src : url('../fonts/vazir.ttf') format('truetype'),
-url('../fonts/vazir.woff') format('woff'),
-url('../fonts/vazir.woff2') format('woff2');
+    font-family: 'vazir';
+    src: url(../fonts/vazir-Black.woff);
+}
+@font-face {
+    font-family: 'isans';
+    src: url(../fonts/isans.ttf);
+    
 }
 /* responsive Part */
 @media screen and (max-width:578px){
@@ -384,7 +488,7 @@ width:70rem;
 @media screen and (max-width:992px){
 
 .bottomNav , .logInPart , .bi-cart , .profileMenu
-,.albumText{
+,.bottomImagePart , .albumText ,.BrandPart ,.brandTitle{
 display: none;
 }
 .navMenuPhone{
@@ -403,7 +507,8 @@ margin-right: 11rem;
 width: 20rem;
 }
 .iconsMainPart{
-width: 7rem;
+width: 14rem;
+margin-right: 8rem;
 }
 .mainIconsMenu{
 margin-right: 35rem;
@@ -411,6 +516,16 @@ margin-right: 35rem;
 .albumImage{
 width: 9rem;
 margin-bottom: 1.5rem;
+}
+.topImagePart{
+flex-direction: column;
+margin-right: 20rem;
+}
+.imagePartMain{
+width: 38rem;
+}
+.bottomImagePart{
+flex-direction: column; 
 }
 }
 

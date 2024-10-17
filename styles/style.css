@@ -537,13 +537,13 @@ flex-direction: column;
 justify-content: space-evenly;
 }
 .iconsText{
-padding-right: 5rem;
+padding-right: 8rem;
 text-align: center;
 }
 
 .iconsImg{
-    width: 5rem;
-    margin-right: 5rem;
+width: 5rem;
+margin-right: 8rem;
 }
 /* footerText Menu */
 .footerText{
@@ -579,38 +579,38 @@ font-size: 1rem;
     position: absolute;
     z-index: 1;
     margin-top: -10rem;
-    margin-right: -40rem;
-    }
-    .textEmail{
+    margin-right: 61rem;
+}
+.textEmail{
     font-size: 0.8rem;
     color: #212121;
-    }
-    #emailAddress{
-    width: 12rem;
-    height: 2rem;
-    margin-top: 1rem;
-    background-color: #c6c7cf;
-    border: 1px solid #c6c7cf;
-    text-align: center;
-    border-radius:0.2rem ;
-    outline: none;
-    }
-    .submit{
-    width: 2rem;
-    height: 2rem;
-    position: absolute;
-    margin-top: 2.2rem;
-    margin-right: 12.5rem;
-    background-color: #c6c7cf;
-    border: 1px solid #ecedff;
-    border-radius:0.2rem ;
-    color: #fff;
-    }
-    .submit:hover{
-    color: #ff0404;
-    transition: all 250ms ease-in-out;
-    cursor: pointer;
-    }
+}
+#emailAddress{
+width: 12rem;
+height: 2rem;
+margin-top: 1rem;
+background-color: #c6c7cf;
+border: 1px solid #c6c7cf;
+text-align: center;
+border-radius:0.2rem ;
+outline: none;
+}
+.submit{
+width: 2rem;
+height: 2rem;
+position: absolute;
+margin-top: 2.2rem;
+margin-right: 12.5rem;
+background-color: #c6c7cf;
+border: 1px solid #ecedff;
+border-radius:0.2rem ;
+color: #fff;
+}
+.submit:hover{
+color: #ff0404;
+transition: all 250ms ease-in-out;
+cursor: pointer;
+}
 /* fonts */
 
 @font-face {

@@ -3,40 +3,14 @@
 --primary-font: 'vazir';
 --seondary-font:'isans';
 --spacing-base: 4px; 
-/* colors */
---color-app-background: #f2f2f2;
---color-app-background-mid-dark: #fafafa;
---color-app-background-dark: #f5f5f5;
---color-transparent: transparent;
---color-ai-300: #2586ff;
---color-ai-400: #8f4aec;
---color-ai-500: #7f53ef;
---color-ai-700: #6000d9;
---color-ai-background: #ecedff;
---color-neutral-100: #f0f0f1;
---color-neutral-200: #e0e0e2;
---color-neutral-300: #c0c2c5;
---color-neutral-400: #a1a3a8;
---color-neutral-500: #81858b;
---color-neutral-600: #62666d;
---color-neutral-650: #424242;
---color-neutral-700: #3f4064;
---color-neutral-800: #23254e;
---color-neutral-850: #212121;
---color-neutral-900: #0c0c0c;
---color-neutral-000: #fff;
---color-dark-neutral-100: #323641;
---color-dark-neutral-200: #424650;
---color-dark-neutral-300: #525660;
---color-dark-neutral-400: #646770;
 }
 *{
 box-sizing: border-box;
-margin: 0;
-padding: 0;
 font-family:var(--primary-font);
 }
 body{
+margin: 0;
+padding: 0;
 text-decoration: none;
 list-style-type: none;
 font-size: 0.8rem;
@@ -50,8 +24,10 @@ list-style-type: none;
 }
 .container {
 width: 100%;
-padding:0 auto;
-margin:0 auto;
+padding-left:1rem;
+padding-right: 1rem;
+margin-left:-1rem;
+margin-right:-1rem;
 }
 /* start header's styles code from 56 to 255 */
 /* navBar that consist of two part start from 57to 187 */
@@ -63,6 +39,7 @@ width:100%;
 background-color: #fff;
 position:sticky;
 z-index: 10;
+
 }
 .topNav{
 display: flex;
@@ -76,6 +53,7 @@ margin-top: 1rem;
 .bi-search{
 color: #81858b;
 font-size: 1.5rem;
+font-weight: lighter;
 margin-right: 30rem;
 margin-top: 1.5rem;
 position: absolute;
@@ -217,7 +195,7 @@ background-size: cover;
 background-repeat: no-repeat;
 margin-top: 1rem;
 height: 30rem;
-width: 84rem;
+width: 100%;
 border-radius:0 0 8rem 8rem;
 box-shadow: 1px 1px 5px #302c2c;
 }
@@ -297,24 +275,29 @@ border-radius: 2rem;
 font-size: 2rem;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold';
 color:#fff;
+margin-top: 0.2rem;
+margin-right: 1.2rem;
 word-spacing: 2px;
 }
 .mainLogoDgkala{
-margin-left: 3rem;
+    padding-top: 0.5rem;
+margin-right: 1.5rem;
 width: 6.2rem;
+}
+.offer{
+margin-top: -2.5rem;
 }
 /* offerPart album  */
 .albumMenu{
 display: flex;
 gap: 1rem;
-margin-top:-16rem ;
-margin-right: 15rem;
-
+margin-top:-16.5rem ;
+margin-right: 13rem;
 }
 .albumItem{
 background-color: #fff;
-width: 9rem;
-height: 13rem;
+width: 9.5rem;
+height: 14rem;
 padding: 0.5rem;
 text-align: justify;
 border-radius: 1rem;
@@ -332,6 +315,7 @@ font-family:'vazir';
 .pricetext{
 display: flex;
 margin-right: 3rem;
+padding-left: 0.5rem;
 font-family:'vazir';
 font-weight: bold;
 }
@@ -364,9 +348,7 @@ display: flex;
 gap: 1rem;
 background-color: #c6c7cf;
 width: 82rem;
-margin-top: 3rem;
-margin-right: 1rem;
-margin-bottom: 2rem;
+margin: 3rem 0.5rem 2rem 0rem;
 padding-top: 1rem;
 border-radius: 2rem;
 }
@@ -491,7 +473,7 @@ width: 8rem;
 footer{
 display: flex;
 background: #fff;
-width: 84rem;
+width: 100%;
 height: 15rem;
 border-top: 2px solid #ff0404;
 border-radius: 1rem;
@@ -523,6 +505,7 @@ width: 8rem;
 text-align: center;
 padding: 0.5rem 1.5rem 0.5rem 0;
 color: #212121;
+align-items: center;
 }
 .iconsMenu{
 display: flex;
@@ -540,7 +523,6 @@ justify-content: space-evenly;
 padding-right: 8rem;
 text-align: center;
 }
-
 .iconsImg{
 width: 5rem;
 margin-right: 8rem;
@@ -574,12 +556,12 @@ font-size: 1rem;
 }
 /* email input  */
 .emailInput{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    z-index: 1;
-    margin-top: -10rem;
-    margin-right: 61rem;
+display: flex;
+flex-direction: column;
+position: absolute;
+z-index: 1;
+margin-top: -10rem;
+margin-right: 61rem;
 }
 .textEmail{
     font-size: 0.8rem;
@@ -599,7 +581,7 @@ outline: none;
 width: 2rem;
 height: 2rem;
 position: absolute;
-margin-top: 2.2rem;
+margin-top: 3.6rem;
 margin-right: 12.5rem;
 background-color: #c6c7cf;
 border: 1px solid #ecedff;
@@ -628,10 +610,18 @@ cursor: pointer;
 }
 /* responsive Part */
 @media screen and (max-width:578px){
-.iconsLink{
+.iconsLink ,.footerText{
 display: none;
 }
+.imageBox{
+margin-right: 10rem;
 }
+.emailInput{
+margin-top: -3rem;
+margin-right: 5rem;
+}
+}
+
 @media screen and (max-width:992px){
 
 .bottomNav , .logInPart , .bi-cart , .profileMenu
@@ -643,9 +633,7 @@ display: none;
 display:inline-block;
 }
 .topNav{
-margin-right: 5rem;
-border-bottom: 1px solid #c6c7cf;
-padding-bottom:1rem;
+margin-right: 10rem;
 }
 .dgkalaLogo{
 width: 15rem;
